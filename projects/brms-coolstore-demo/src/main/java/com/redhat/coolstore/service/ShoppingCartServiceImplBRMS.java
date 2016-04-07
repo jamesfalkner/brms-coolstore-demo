@@ -3,6 +3,7 @@ package com.redhat.coolstore.service;
 import java.io.Serializable;
 
 import javax.ejb.Stateful;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
 import org.kie.api.runtime.KieSession;
@@ -14,7 +15,7 @@ import com.redhat.coolstore.model.ShoppingCart;
 import com.redhat.coolstore.model.ShoppingCartItem;
 import com.redhat.coolstore.util.BRMSUtil;
 
-@Stateful
+@ApplicationScoped
 public class ShoppingCartServiceImplBRMS implements ShoppingCartService, Serializable {
 
 	private static final long serialVersionUID = 6821952169434330759L;

@@ -1,11 +1,19 @@
 package com.redhat.coolstore.model;
 
-public class ShoppingCartItem {
+import java.io.Serializable;
+
+public class ShoppingCartItem implements Serializable {
 	
+	private static final long serialVersionUID = 6964558044240061049L;
+
 	private double price;
 	private int quantity;
 	private double promoSavings;
 	private Product product;
+	
+	public ShoppingCartItem() {
+		
+	}
 	
 	public double getPrice() {
 		return price;

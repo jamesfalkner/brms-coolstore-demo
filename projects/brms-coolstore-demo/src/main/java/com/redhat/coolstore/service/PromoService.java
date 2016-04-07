@@ -7,12 +7,13 @@ import java.util.Map;
 import java.util.Set;
 
 import javax.ejb.Singleton;
+import javax.enterprise.context.ApplicationScoped;
 
 import com.redhat.coolstore.model.Promotion;
 import com.redhat.coolstore.model.ShoppingCart;
 import com.redhat.coolstore.model.ShoppingCartItem;
 
-@Singleton
+@ApplicationScoped
 public class PromoService implements Serializable {
 
 	private static final long serialVersionUID = 2088590587856645568L;

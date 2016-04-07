@@ -1,5 +1,6 @@
 .git
 target
+src/main/webapp/vendor
 docs
 init.bat
 init.sh
