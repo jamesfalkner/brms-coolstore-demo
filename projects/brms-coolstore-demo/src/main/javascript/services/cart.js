@@ -26,7 +26,6 @@ angular.module("app")
 			   method: 'GET',
 			   url: 'rest/products/cart',
 		   }).then(function(resp) {
-			   console.log("after cart reset: cart: " + JSON.stringify(resp.data));
 			    cart = resp.data;
 		   }, function(err) {
 		   });
@@ -39,7 +38,6 @@ angular.module("app")
 		
 	factory.removeFromCart = function(product, quantity) {
 		var deferred = $q.defer();
-		console.log("removing (" + quantity + ") from cart: " + JSON.stringify(product));
 		$http({
 			   method: 'POST',
 			   url: 'rest/products/cart/delete',
@@ -59,7 +57,6 @@ angular.module("app")
 
 	factory.addToCart = function(product, quantity) {
 		var deferred = $q.defer();
-		console.log("adding (" + quantity + ") to cart: " + JSON.stringify(product));
 		$http({
 			   method: 'POST',
 			   url: 'rest/products/cart',
@@ -83,7 +80,6 @@ angular.module("app")
 		   method: 'GET',
 		   url: 'rest/products/list'
 	   }).then(function(resp) {
-		   console.log("product list: " + JSON.stringify(resp.data));
 		  deferred.resolve(resp.data); 
 	   }, function(err) {
 		   deferred.reject(err);

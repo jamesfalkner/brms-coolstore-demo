@@ -44,7 +44,6 @@ public class DefaultDeployment {
 		        		"org.kie:kie-ci",
 		        		"org.jbpm:jbpm-bpmn2",
 		        		"org.mvel:mvel2",
-		        		"com.vaadin:vaadin-server",
 		        		"com.redhat:coolstore"
 		        		)
 		        .withTransitivity().asFile();

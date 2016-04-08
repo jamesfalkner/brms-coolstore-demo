@@ -36,6 +36,7 @@
  			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
 				<executions>
 					<execution>
 						<id>exec-npm-install</id>
@@ -137,7 +138,7 @@
 				<artifactId>jboss-as-maven-plugin</artifactId>
 				<version>7.3.Final</version>
 				<configuration>
-					<hostname>192.168.99.100</hostname>
+					<hostname>localhost</hostname>
 					<port>9999</port>
 					<username>admin</username>
 					<password>jbosseap1!</password>
@@ -417,10 +418,6 @@
 		<!-- jboss.brms.version>6.0.3-redhat-4</jboss.brms.version -->
 		<jboss.brms.version>6.2.0.GA-redhat-1</jboss.brms.version>
 
-		<!-- Define the version of Vaadin framework. -->
-		<vaadin.version>7.6.0</vaadin.version>
-		<vaadin.plugin.version>7.6.0</vaadin.plugin.version>
-
 		<project.encoding>UTF-8</project.encoding>
 	</properties>
 
@@ -428,7 +425,7 @@
 		<repository>
 			<id>jboss-maven-repository</id>
 			<name>JBoss Maven Repository</name>
-			<url>http://maven.repository.redhat.com/techpreview/all/</url>
+			<url>http://maven.repository.redhat.com/ga/</url>
 			<layout>default</layout>
 			<releases>
 				<enabled>true</enabled>
@@ -445,7 +442,7 @@
 		<pluginRepository>
 			<id>jboss-maven-repository</id>
 			<name>JBoss Maven Repository</name>
-			<url>http://maven.repository.redhat.com/techpreview/all/</url>
+			<url>http://maven.repository.redhat.com/ga/</url>
 			<layout>default</layout>
 			<releases>
 				<enabled>true</enabled>

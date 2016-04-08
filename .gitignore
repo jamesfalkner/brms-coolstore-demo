@@ -5,6 +5,6 @@ target/
 *.settings
 .security/
 *.jar
-.dockerignore
-Dockerfile*
-docker-compose.yml
+/.dockerignore
+/Dockerfile*
+/docker-compose.yml

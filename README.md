@@ -1,14 +1,12 @@
 JBoss BRMS Suite Cool Store Demo with AngularJS & Patternfly
 ================================
 This is a retail web store demo where you will find rules, decision tables, events, and a ruleflow 
-that is leveraged by a single page Angular-based application and protected by [KeyCloak](http://keycloak.jboss.org).
+that is accessed by a single page [Angular JS](https://angularjs.org)-based application, protected by [KeyCloak](http://keycloak.jboss.org), whose UX is driven primarily by the patterns and best practices from [PatternFly](https://patternfly.org). The demo is a remake of the [JBoss Developer Cool Store Vaadin-based Demo](https://github.com/jbossdemocentral/brms-coolstore-demo).
 
 The web application is a WAR built using the JBoss BRMS
 generated project as a dependency, providing an example project showing how developers can focus on the 
 application code while the business analysts can focus on rules, events, and ruleflows in the 
 JBoss BRMS product web based dashboard.
-
-The single page app is housed within the WAR and is built with [AngularJS](https://angularjs.org) and [PatternFly](https://patternfly.org).
 
 This demo is built with, contained by and executed using [Docker](https://docker.com).
 
@@ -48,7 +46,7 @@ The following steps can be used to configure and run the demo in a container
 
 	- login for the cool store is (u:`jfalkner` / p:`keycloak1!`)
 	
-Note that if you are using Docker through VM (e.g. when using Docker on Mac OS X), you will need [forward your localhost ports to the Docker VM](https://github.com/boot2docker/boot2docker/blob/master/doc/WORKAROUNDS.md#port-forwarding).
+Note that if you are using Docker through a VM (e.g. when using Docker on Mac OS X), you will need [forward your localhost ports to the Docker VM](https://github.com/boot2docker/boot2docker/blob/master/doc/WORKAROUNDS.md#port-forwarding) or change `localhost` to your Docker VM's IP address in [keycloak.json](src/main/webapp/keycloak.json).
   
 Additional information can be found in the jbossdemocentral container [developer repository](https://github.com/jbossdemocentral/docker-developer)
 
@@ -65,35 +63,13 @@ version to 4.0.0, build and deploy, watch for KieScanner picking up new 4.0.0 ve
 shipping values.
 
 
-Supporting Articles
--------------------
-- [JBoss BRMS Cool Store UI gets Vaadin facelift](http://www.schabell.org/2016/01/jboss-brms-coolstore-ui-vaadin-facelift.html)
+References
+----------
+- [JBoss Developer Cool Store Vaadin-based Demo](https://github.com/jbossdemocentral/brms-coolstore-demo)
 
-- [7 Steps to Your First Rules with JBoss BRMS Starter Kit](http://www.schabell.org/2015/08/7-steps-first-rules-jboss-brms-starter-kit.html)
+- [JBoss Developer Cool Store Vaadin-based Demo](https://github.com/jbossdemocentral/brms-coolstore-demo)
 
-- [3 shockingly easy ways into JBoss rules, events, planning & BPM](http://www.schabell.org/2015/01/3-shockingly-easy-ways-into-jboss-brms-bpmsuite.html)
-
-- [Jump Start Your Rules, Events, Planning and BPM Today](http://www.schabell.org/2014/12/jump-start-rules-events-planning-bpm-today.html)
-
-- [4 Foolproof Tips Get You Started With JBoss BRMS 6.0.3](http://www.schabell.org/2014/10/4-foolproof-tips-get-started-jboss-brms-603.html)
-
-- [How to Use Rules and Events to Drive JBoss BRMS Cool Store for xPaaS](http://www.schabell.org/2014/08/how-to-use-rules-events-drive-jboss-brms-coolstore-xpaas.html)
-
-- [Red Hat JBoss BRMS - all product demos updated for version 6.0.2.GA release](http://www.schabell.org/2014/07/redhat-jboss-brms-product-demos-6.0.2-updated.html)
-
-- [Red Hat JBoss BRMS 6 - Demo Cool Store Dynamic Rule Updates (video)] (http://www.schabell.org/2014/05/redhat-jboss-brms6-demo-coolstore-dynamic-rule-updates.html)
-
-- [Red Hat JBoss BRMS 6 - The New Cool Store Demo] (http://www.schabell.org/2014/03/redhat-jboss-brms-v6-coolstore-demo.html)
- 
-- [JBoss BRMS Cool Store Demo updated with EAP 6.1.1] (http://www.schabell.org/2013/09/jboss-brms-coolstore-demo-updated-eap-611.html)
-
-- [A shopping cart example in the Cool Store Demo] (http://www.schabell.org/2013/04/jboss-brms-coolstore-demo.html)
-
-- [Cool Store installation video part I] (http://www.schabell.org/2013/05/jboss-brms-coolstore-demo-video-partI.html)
-
-- [Cool Store CEP and Rules video part II] (http://www.schabell.org/2013/05/jboss-brms-coolstore-demo-video-partII.html)
-
-- [Cool Store BPM and Decision Tables video part III] (http://www.schabell.org/2013/05/jboss-brms-coolstore-demo-video-partIII.html)
+- [Demo Overview and Docs] (https://github.com/jbossdemocentral/brms-coolstore-demo/docs)
 
 
 Released versions
@@ -101,14 +77,4 @@ Released versions
 See the tagged releases for the following versions of the product:
 
 - v1.0 Initial version based on the awesome [JBoss Developer Cool Store Vaadin Demo](https://github.com/jbossdemocentral/brms-coolstore-demo)
-
-![Announcement Sign](https://github.com/jbossdemocentral/brms-coolstore-demo/blob/master/docs/demo-images/announce-sign.jpg?raw=true)
-
-[![Video bpmPaaS CoolStore](https://github.com/jbossdemocentral/brms-coolstore-demo/blob/master/docs/demo-images/video-brms-coolstore-demo.png?raw=true)](https://vimeo.com/ericschabell/brms-coolstore-demo)
-
-[![Video bpmPaaS CoolStore](https://github.com/jbossdemocentral/brms-coolstore-demo/blob/master/docs/demo-images/video-bpmpaas-coolstore.png?raw=true)](http://vimeo.com/ericschabell/bpmpaas-brms-coolstore-demo)
-
-![Decision Table](https://github.com/jbossdemocentral/brms-coolstore-demo/blob/master/docs/demo-images/coolstore-decision-table.png?raw=true)
-
-![Domain Model](https://github.com/jbossdemocentral/brms-coolstore-demo/blob/master/docs/demo-images/coolstore-model.png?raw=true)
 

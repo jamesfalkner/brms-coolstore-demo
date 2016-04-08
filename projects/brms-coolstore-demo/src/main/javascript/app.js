@@ -25,7 +25,6 @@ angular.element(document).ready(function($http) {
       return auth;
     });
     keycloakAuth.loadUserInfo().success(function(userInfo) {
-      console.log("user info loaded: " + JSON.stringify(userInfo));
       auth.userInfo = userInfo;
     });
 
